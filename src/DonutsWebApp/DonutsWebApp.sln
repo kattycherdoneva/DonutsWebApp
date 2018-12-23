@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonutsWebApp.Web", "Web\DonutsWebApp.Web\DonutsWebApp.Web.csproj", "{65EADDC4-450C-4428-A6F7-4CB14E3C63AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B8D215F5-270B-4D0E-B5F4-EB9E8410656B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65EADDC4-450C-4428-A6F7-4CB14E3C63AA} = {B8D215F5-270B-4D0E-B5F4-EB9E8410656B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFE60400-37D1-43D8-9E89-136D3796B393}
