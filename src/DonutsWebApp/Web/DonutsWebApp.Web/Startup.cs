@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using DonutsWebApp.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using DonutsWebApp.Web.Models;
+using DonutsWebApp.Data.Models;
+using DonutsWebApp.Data;
 
 namespace DonutsWebApp.Web
 {
@@ -34,11 +36,20 @@ namespace DonutsWebApp.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<DonutsAppContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                   this.Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDefaultIdentity<DonutsAppUser>(
+                options =>
+            {
+                options.Password.RequiredLength = 6;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = false;
+            })
+                .AddEntityFrameworkStores<DonutsAppContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

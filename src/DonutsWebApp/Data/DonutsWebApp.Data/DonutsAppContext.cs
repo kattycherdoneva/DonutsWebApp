@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DonutsWebApp.Web.Areas.Identity.Data;
+using DonutsWebApp.Data.Models;
+using DonutsWebApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace DonutsWebApp.Web.Models
+namespace DonutsWebApp.Data
 {
     public class DonutsAppContext : IdentityDbContext<DonutsAppUser>
     {

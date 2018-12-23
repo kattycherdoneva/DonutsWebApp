@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
-using DonutsWebApp.Web.Areas.Identity.Data;
+using DonutsWebApp.Data.Models;
+using DonutsWebApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

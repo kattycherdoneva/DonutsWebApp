@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using DonutsWebApp.Web.Areas.Identity.Data;
+using DonutsWebApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using DonutsWebApp.Data.Models;
 
 namespace DonutsWebApp.Web.Areas.Identity.Pages.Account
 {
