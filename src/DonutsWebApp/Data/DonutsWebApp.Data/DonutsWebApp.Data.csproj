@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DonutsWebApp.Data.Common\DonutsWebApp.Data.Common.csproj" />
     <ProjectReference Include="..\DonutsWebApp.Data.Models\DonutsWebApp.Data.Models.csproj" />
   </ItemGroup>
 

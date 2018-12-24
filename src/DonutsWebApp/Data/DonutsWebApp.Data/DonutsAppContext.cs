@@ -17,6 +17,15 @@ namespace DonutsWebApp.Data
         {
         }
 
+        public DbSet<Donation> Donations { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Receipt> Receipts { get; set; }
+        public DbSet<ProductForReceipt> ProductForReceipts { get; set; }
+        public DbSet<Resource> Resources { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<Shipping> Shippings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

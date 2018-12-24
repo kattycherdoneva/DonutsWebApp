@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DonutsWebApp.Data.Common
+﻿namespace DonutsWebApp.Data.Common
 {
-    class BaseModel
+    public class BaseModel<T>
     {
+        public T Id { get; set; }
     }
 }

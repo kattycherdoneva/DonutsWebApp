@@ -1,12 +1,12 @@
-﻿using DonutsWebApp.Data.Common;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using DonutsWebApp.Data.Common;
 
 namespace DonutsWebApp.Data
 {
-    public class DbRepository public class DbRepository<TEntity> : IRepository<TEntity>, IDisposable
+   public class DbRepository<TEntity> : IRepository<TEntity>, IDisposable
         where TEntity : class
     {
         private readonly DonutsAppContext context;
@@ -43,5 +43,4 @@ namespace DonutsWebApp.Data
             this.context.Dispose();
         }
     }
-}
 }
