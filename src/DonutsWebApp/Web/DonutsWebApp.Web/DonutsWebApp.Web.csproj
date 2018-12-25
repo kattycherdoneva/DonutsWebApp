@@ -14,6 +14,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\DonutsWebApp.Data.Models\DonutsWebApp.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\DonutsWebApp.Data\DonutsWebApp.Data.csproj" />
+    <ProjectReference Include="..\..\DonutsWebApp.Services.Mapping\DonutsWebApp.Services.Mapping.csproj" />
+    <ProjectReference Include="..\..\Services\DonutsWebApp.DataServices\DonutsWebApp.Services.DataServices.csproj" />
+    <ProjectReference Include="..\..\Services\DonutsWebApp.Services.Models\DonutsWebApp.Services.Models.csproj" />
   </ItemGroup>
 
 </Project>
